@@ -14,6 +14,8 @@ body{
 .topSection{
     background-color: darkgreen;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
 }
 
 .topBarSearch{
@@ -27,8 +29,34 @@ body{
 .sideBar {
     background-color: blueviolet;
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr 1fr;
+}
+
+.sideBarItems{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.sideBarItems img{
+    width: 30px;
+    height: auto;
+}
+
+.sideBarItems h2{
+    justify-self: baseline;
 }
 
 .mainContent{
     background-color: chocolate;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
+}
+
+.projects{
+    grid-row: 1 / 3;
 }
