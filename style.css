@@ -11,6 +11,14 @@ body{
     grid-template-rows: 1fr 5fr;
 }
 
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.2em;
+}
+
 .topSection{
     background-color: darkgreen;
     grid-column: 2 / 3;
@@ -33,20 +41,32 @@ body{
     grid-template-rows: 1fr 3fr 2fr 1fr;
 }
 
+#sideHeader svg{
+    width: 50px;
+    height: auto;
+}
+
 .sideBarItems{
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
-    justify-items: center;
 }
 
-.sideBarItems img{
+.sideBarItems svg{
     width: 30px;
     height: auto;
+    justify-self: center;
 }
 
-.sideBarItems h2{
-    justify-self: baseline;
+.sideBarFooter{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.sideBarFooter svg{
+    width: 100px;
 }
 
 .mainContent{
