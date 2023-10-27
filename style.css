@@ -13,6 +13,7 @@ body{
 
 h1{
     font-size: 2em;
+    padding: 10px;
 }
 
 h2{
@@ -30,6 +31,14 @@ input{
 label{
     display: flex;
     justify-content: center;
+}
+
+h3{
+    padding: 5px 0px;
+}
+
+h4 p{
+    font-size: 2rem;
 }
 
 .topSection{
@@ -55,8 +64,8 @@ label{
 }
 
 .topMenu button{
-    width: 75px;
-    height: 2em;
+    width: 100px;
+    height: 50px;
     justify-self: center;
     border-radius: 10px;
 }
@@ -108,3 +117,26 @@ svg{
 .projects{
     grid-row: 1 / 3;
 }
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding-right: 10px;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-left: yellow 5px solid;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px black;
+}
+
+.announcements .card, .trending .card{
+    width: 200px;
+    height: 65px;
+    background-color: white;
+}
+
